@@ -254,6 +254,7 @@ body.loaded {
   background-size: cover;
   display: grid;
   grid-template-rows: 300px 1fr;
+  overflow: hidden;
 }
 .home__container--title {
   display: flex;
@@ -285,6 +286,31 @@ body.loaded {
   font-family: "Akatab", sans-serif;
 }
 
+@media (min-width: 500px) {
+  .home__container {
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 72%, 30% 100%, 0 100%, 0% 50%);
+  }
+  .home__container--title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 10.5%;
+    top: 32px;
+    font-size: 7rem;
+  }
+  .home__container--title2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 10%;
+    top: 125px;
+    font-size: 5rem;
+    letter-spacing: -12px;
+  }
+}
 @media (min-width: 800px) {
   .home__container {
     overflow: hidden;
