@@ -22,8 +22,8 @@
   </div>
 
   <!-- HEADER -->
-  <header class="header">
-    <div class="header__profile">
+  <!-- <header class="header"> -->
+    <!-- <div class="header__profile">
       <img src="" alt="" class="header__profile--img">
       <h2 class="header__profile--title">Christian Fabian Ursino</h2>
       <div class="header__profile--container">
@@ -47,22 +47,80 @@
         <li class="nav__list--items"><a href="#works" class="nav__list--link"><i class="fa-solid fa-hammer"></i>Trabajos</a></li>
         <li class="nav__list--items"><a href="#contact" class="nav__list--link"><i class="fa-solid fa-envelope"></i>Contactame</a></li>
       </ul>
-    </nav>
-  </header>
-  <i class="fa-solid fa-bars" id="menuBtn"></i>
+    </nav> -->
+    <header class="header" data-header>
+      <div class="header__container">
+        <nav class="nav" data-navbar>
+          <button class="closeButton" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+  
+          <a href="#" class="logo"><img src="img/logo.png" alt="FLconstrucciones" width="300" height="300"></a>
+          <ul class="nav__list">
+            <li class="nav__list--item"><a href="#home" class="nav__list--link hover__underline">
+                <div class="nav__list--link--icon"></div><span class="nav__list--link--text">inicio</span>
+              </a></li>
+            <li class="nav__list--item"><a href="#home" class="nav__list--link hover__underline ">
+                <div class="nav__list--link--icon"></div><span class="nav__list--link--text">menu</span>
+              </a></li>
+            <li class="nav__list--item"><a href="#home" class="nav__list--link hover__underline ">
+                <div class="nav__list--link--icon"></div><span class="nav__list--link--text">acerca de</span>
+              </a></li>
+            <li class="nav__list--item"><a href="#home" class="nav__list--link hover__underline ">
+                <div class="nav__list--link--icon"></div><span class="nav__list--link--text">chefs</span>
+              </a></li>
+            <li class="nav__list--item"><a href="#home" class="nav__list--link hover__underline ">
+                <div class="nav__list--link--icon"></div><span class="nav__list--link--text">contactanos</span>
+              </a></li>
+          </ul>
+        </nav>
+        <button class="nav__openButton" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+  <!-- </header> -->
+  <!-- <i class="fa-solid fa-bars" id="menuBtn"></i> -->
 
   <!-- BODY -->
   <main class="main">
+    <!-- ------------ -->
+        <!-- HOME -->
+    <!-- ------------ -->
     <section class="home" id="home">
       <div class="home__container">
         <h1 class="home__container--title">FL</h1>;
         <h2 class="home__container--title2"><span style="color: rgba(255, 255, 255, 0.05); text-shadow: 1px 2px 4px #715013; -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);">c</span>onstrucciones</h2>
       </div>
     </section>
+    <!-- ------------ -->
+        <!-- HOME -->
+    <!-- ------------ -->
+    <section class="" id="cv">
+      <div class="cv__container">
+        <p class="cv__container--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quia, minima quidem dignissimos id numquam, at cupiditate explicabo nostrum fuga, quos porro modi. Nam provident sunt excepturi beatae fugit molestiae, soluta illum sapiente hic, repellat pariatur! Deserunt doloribus sint commodi!</p>
+      </div>
+    </section>
+    <!-- ------------ -->
+        <!-- ABOUT -->
+    <!-- ------------ -->
+    <section class="about">
+      <div class="skew-c"></div>
+      <div class="colour-block">
+        <h1>Responsive Skewed Page Dividers.</h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+      </div>
+      <div class="skew-cc"></div>
+    </section>
   </main>
 </body>
 
 
 <script src="js/preLoad.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="js/menu.js"></script>
 </html>
