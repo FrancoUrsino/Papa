@@ -395,7 +395,7 @@ body.loaded {
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 10.5%;
+    left: 4.5%;
     top: 32px;
     font-size: 7rem;
   }
@@ -404,7 +404,7 @@ body.loaded {
     justify-content: center;
     align-items: center;
     text-align: center;
-    left: 10%;
+    left: 5%;
     top: 125px;
     font-size: 5rem;
     letter-spacing: -9px;
