@@ -1,5 +1,5 @@
 .header {
-  width: 350px;
+  width: 340px;
   height: 100vh;
   padding: 15px 30px;
   background: radial-gradient(ellipse at bottom, #6e79851a 0%, #64677540 100%);
@@ -126,7 +126,7 @@
 #menuBtn {
   position: fixed;
   top: 25px;
-  right: 25px;
+  right: 30px;
   font-size: 20px;
   width: 40px;
   height: 40px;
@@ -151,7 +151,7 @@
 
 @media (max-width: 1050px) {
   .header {
-    left: -350px;
+    left: -340px;
 
     &__footer {
       left: -300px;
