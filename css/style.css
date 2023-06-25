@@ -382,6 +382,9 @@ body.loaded {
   font-weight: 400;
   font-family: "Akatab", sans-serif;
 }
+.home__container--span {
+  display: flex;
+}
 
 @media (min-width: 500px) {
   .home__container {
