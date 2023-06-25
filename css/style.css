@@ -16,7 +16,6 @@ li {
 a,
 img,
 data,
-span,
 input,
 button,
 select,
@@ -352,7 +351,7 @@ body.loaded {
   background-position: center;
   background-size: cover;
   display: grid;
-  grid-template-rows: 300px 1fr;
+  grid-template-rows: 500px 1fr;
   overflow: hidden;
 }
 .home__container--title {
@@ -362,7 +361,8 @@ body.loaded {
   align-items: center;
   text-align: center;
   justify-items: center;
-  font-size: 7rem;
+  position: absolute;
+  font-size: 5rem;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.05);
   text-shadow: 1px 2px 4px rgb(113, 80, 19);
@@ -374,13 +374,14 @@ body.loaded {
 }
 .home__container--title2 {
   position: absolute;
-  top: 140px;
+  top: 90px;
+  left: -6%;
   color: rgba(255, 255, 255, 0.169);
   text-shadow: 1px 2px 4px rgba(249, 249, 249, 0.277);
   letter-spacing: -5px;
   padding-left: 95px;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.812);
-  font-size: 3.8rem;
+  font-size: 3.5rem;
   font-weight: 400;
   font-family: "Akatab", sans-serif;
 }
