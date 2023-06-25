@@ -29,6 +29,7 @@
 .btn{
   display: none;
 }
+
 .header{
   position: fixed;
   top: 0;
@@ -51,8 +52,8 @@
 
 .header.active{
   padding-block: 20px;
-  background-color: $black;
-  border-color: rgba(180, 14, 14, 0.529);
+  background-color: rgba(51, 51, 51, 0.767);
+  border-color: $fColor;
 }
 
 .header.hide{
@@ -67,7 +68,7 @@
 .nav__openButton .line{
   width: 30px;
   height: 2px;
-  background-color: $fColor;
+  background-color: $white;
   margin-block: 4px;
   transform-origin: left;
   animation: menuBtn 400ms ease-in-out alternate infinite;
@@ -84,7 +85,7 @@
 
 .nav{
   position: fixed;
-  background: radial-gradient(ellipse at bottom, #5a5a5aa9 0%, #171717eb 100%);
+  background: $gradient;
   top: 0;
   left: -360px;
   bottom: 0;
@@ -149,10 +150,6 @@
   margin-inline: auto;
   margin-block-end: 60px;
 }
-
-.nav__list--link--text{
-  color: $white;
-}
 .nav__list--link:is(:hover, :focus-visible, .active) .nav__list--link--text{
   color: $sColor;
   transform: translateX(20px);
@@ -176,7 +173,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(43, 43, 43, 0.624);
+  background-color: rgba(0, 0, 0, 0.675);
   opacity: 0;
   pointer-events: none;
   transition: 500ms ease;

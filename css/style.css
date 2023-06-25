@@ -16,6 +16,7 @@ li {
 a,
 img,
 data,
+span,
 input,
 button,
 select,
@@ -199,8 +200,8 @@ body.loaded {
 
 .header.active {
   padding-block: 20px;
-  background-color: rgb(32, 32, 32);
-  border-color: rgba(180, 14, 14, 0.529);
+  background-color: rgba(51, 51, 51, 0.767);
+  border-color: rgb(113, 80, 19);
 }
 
 .header.hide {
@@ -216,7 +217,7 @@ body.loaded {
 .nav__openButton .line {
   width: 30px;
   height: 2px;
-  background-color: rgb(113, 80, 19);
+  background-color: rgb(255, 255, 255);
   margin-block: 4px;
   transform-origin: left;
   animation: menuBtn 400ms ease-in-out alternate infinite;
@@ -303,10 +304,6 @@ body.loaded {
   margin-block-end: 60px;
 }
 
-.nav__list--link--text {
-  color: rgb(255, 255, 255);
-}
-
 .nav__list--link:is(:hover, :focus-visible, .active) .nav__list--link--text {
   color: rgba(167, 100, 0, 0.831);
   transform: translateX(20px);
@@ -331,7 +328,7 @@ body.loaded {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(43, 43, 43, 0.624);
+  background-color: rgba(0, 0, 0, 0.675);
   opacity: 0;
   pointer-events: none;
   transition: 500ms ease;
@@ -347,11 +344,11 @@ body.loaded {
   width: 100%;
   height: 100vh;
   background-image: radial-gradient(rgba(84, 84, 84, 0.7098039216), rgba(0, 0, 0, 0.7568627451)), url(../img/header.jpg);
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   display: grid;
-  grid-template-rows: 500px 1fr;
+  grid-template-rows: 300px 1fr;
   overflow: hidden;
 }
 .home__container--title {
