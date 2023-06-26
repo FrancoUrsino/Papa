@@ -148,7 +148,11 @@
 .nav .logo{
   max-width: max-content;
   margin-inline: auto;
-  margin-block-end: 60px;
+  margin-block-end: 80px;
+}
+
+.nav__list--link--text{
+  color: $white;
 }
 .nav__list--link:is(:hover, :focus-visible, .active) .nav__list--link--text{
   color: $sColor;
