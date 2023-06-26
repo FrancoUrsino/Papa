@@ -13,7 +13,7 @@ const showContainer = () => {
   </div>
   <div class="about__container--2--container--2">
     <p class="about__container--2--container--2--text" id="text1" style="display: none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quia, minima quidem dignissimos id numquam, at cupiditate explicabo nostrum fuga, quos porro modi.</p>
-    <p class="about__container--2--container--2--text" id="text2">Resolución de problemas y Conflictos | Creativo | Gestión de Personas | Liderazgo | Trabajo en Equipo | Tolerancia a Trabajar Bajo Presión | Escucha Activa | Responsabilidad | Proactivo</p>
+    <p class="about__container--2--container--2--text" id="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quia, minimaLorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quia, minima quidem dignissimos id numquam, at cupiditate explicabo nostrum fuga, quos porro modi. quidem dignissimos id numquam, at cupiditate explicabo nostrum fuga, quos porro modi.</p>
   </div>
   `
   container.append(containerContent);
