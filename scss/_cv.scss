@@ -2,12 +2,18 @@
   margin: 10px 0;
   width: 100%;
   height: auto;
-  display: grid;
+  display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
 
   &__container{
     padding: 30px;
+
+    &--text{
+      width: 100%;
+      display: flex;
+      font-size: 1.3em;
+    }
   }
 }

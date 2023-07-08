@@ -6,6 +6,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
+    clip-path: polygon(100% 0, 100% 91%, 30% 100%, 0 93%, 0 0);
     display: grid;
     grid-template-rows: 300px 1fr;
     overflow: hidden;
@@ -124,6 +126,7 @@
 @media (min-width: 1050px){
   .home__container{
     overflow: hidden;
+    clip-path: polygon(100% 0, 100% 78%, 30% 100%, 0 86%, 0 0);
   }
   .home__container--title{
     display: flex;
