@@ -1,15 +1,13 @@
-.AboutUs__card--title{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  justify-self: center;
-  color: $fColor;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
-  margin-top: 13px;
-  text-shadow: 1px 1px 2px $sColor;
-  font-size: 3rem;
-  font-weight: 600;
+.AboutUs__card--container{
+  display: grid;
+  background-image: radial-gradient(#ababab59, #00000033), url(../img/pared.avif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  clip-path: polygon(30% 4%, 100% 0, 100% 100%, 0 100%, 0 0);
+  height: auto;
+  margin: 0;
 }
 
 .AboutUs__card--title2{
@@ -18,11 +16,11 @@
   align-items: center;
   text-align: center;
   justify-self: center;
-  color: rgba(255, 255, 255, 0.05);
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
-  margin-top: 13px;
-  text-shadow: 1px 1px 2px $sColor;
-  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.289);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.359);
+  margin-top: 150px;
+  text-shadow: 1px 1px 2px $fColor;
+  font-size: 4rem;
   font-weight: 600;
 }
 
@@ -122,5 +120,11 @@
     text-transform: lowercase;
     text-align: center;
     color: $fColor;
+  }
+}
+
+@media (min-width: 1050px){
+  .AboutUs__card--container{
+    clip-path: polygon(30% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
   }
 }

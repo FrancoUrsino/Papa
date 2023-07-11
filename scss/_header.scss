@@ -68,11 +68,11 @@
 .nav__openButton .line{
   width: 30px;
   height: 2px;
-  background-color: $white;
+  background-color: $sColor;
   margin-block: 4px;
   transform-origin: left;
   animation: menuBtn 400ms ease-in-out alternate infinite;
-  color: $white;
+  color: $sColor;
 }
 @keyframes menuBtn {
   0%{
