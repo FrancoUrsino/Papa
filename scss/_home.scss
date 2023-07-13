@@ -272,3 +272,34 @@
     }
   }
 }
+
+
+// wpp
+
+.wpp{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+
+  &__container{
+    margin: 20px;
+    width: auto;
+    height: auto;
+
+    &--logo{
+      font-size: 3rem;
+      color: $white;
+      padding: 10px 20px;
+      background-color: $sColor;
+      border-radius: 50%;
+      opacity: 0.5;
+      
+      &:hover{
+        opacity: 0.8;
+        color: $white;
+      }
+    }
+  }
+}

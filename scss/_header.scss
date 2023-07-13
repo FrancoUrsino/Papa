@@ -188,3 +188,153 @@
   opacity: 1;
   pointer-events: all;
 }
+
+
+
+
+// NAV2 //
+
+
+
+
+.nav2__list--link--icon{
+  content: '';
+  width: 8px;
+  height: 8px;
+  border: 1px solid $sColor;
+  transform: rotate(45deg);
+}
+.nav2__openButton{
+  padding: 12px;
+  padding-inline-end: 0;
+}
+.nav2__openButton .line{
+  width: 30px;
+  height: 2px;
+  background-color: $sColor;
+  margin-block: 4px;
+  transform-origin: left;
+  animation: menuBtn 400ms ease-in-out alternate infinite;
+  color: $sColor;
+}
+.nav2__openButton .line-2{animation-delay: 150ms;}
+.nav2__openButton .line-3{animation-delay: 300ms;}
+
+.nav2{
+  position: fixed;
+  background: $gradient;
+  top: 0;
+  left: -360px;
+  bottom: 0;
+  max-width: 360px;
+  width: 100%;
+  padding-inline: 30px;
+  padding-block-end: 50px;
+  overflow-y: auto;
+  visibility: hidden;
+  z-index: 1;
+  transition: 500ms ease;
+
+  &__list{
+    border-block-end: 1px solid $sColor;
+    margin-block-end: 100px;
+
+    &--item{
+      border-block-start: 1px solid $sColor;
+    }
+    &--link{
+      position: relative;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      padding-block: 10px;
+      max-width: unset;
+
+      &::after{
+        display: none;
+      }
+
+      &--text{
+        transition: 250ms ease;
+      }
+
+    }
+  }
+}
+
+.nav2.active{
+  visibility: visible;
+  transform: translateX(360px);
+}
+
+.nav2 .closeButton{
+  color: $white;
+  border: 1px solid currentColor;
+  padding: 4px;
+  border-radius: 50%;
+  margin-inline-start: auto;
+  margin-block: 30px 20px;
+}
+
+.nav2 .closeButton ion-icon{
+  --ionicon-stroke-width: 40px;
+}
+.nav2 .closeButton:is(:hover, :focus-visible){
+  color: $sColor;
+}
+
+.nav2 .logo{
+  max-width: max-content;
+  margin-inline: auto;
+  margin-block-end: 80px;
+}
+
+.nav2__list--link--text{
+  color: $white;
+}
+.nav2__list--link:is(:hover, :focus-visible, .active) .nav2__list--link--text{
+  color: $sColor;
+  transform: translateX(20px);
+}
+.nav2__list--link .nav2__list--link--icon{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) rotate(45deg);
+  opacity: 0;
+  transition: 250ms ease;
+}
+
+.nav2__list--link:is(:hover, :focus-visible, .active) .nav2__list--link--icon{
+  opacity: 1;
+}
+
+.header2{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  padding-block: 40px;
+  z-index: 2;
+  border-block-end: 1px solid transparent;
+  transition: 250ms ease;
+
+  &__container{
+    padding-inline: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+.header2.active{
+  padding-block: 20px;
+  background-color: rgba(51, 51, 51, 0.767);
+  border-color: $fColor;
+}
+
+.header2.hide{
+  transform: translateY(-100%);
+  transition-delay: 250ms;
+}

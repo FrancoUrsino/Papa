@@ -20,7 +20,7 @@
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.359);
   margin-top: 150px;
   text-shadow: 1px 1px 2px $fColor;
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -126,5 +126,9 @@
 @media (min-width: 1050px){
   .AboutUs__card--container{
     clip-path: polygon(30% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+
+  .AboutUs__card--title2{
+    font-size: 4rem;
   }
 }
